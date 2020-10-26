@@ -3,8 +3,13 @@ class PrimeCheck
 {
    public static void main(String args[])
    {		
-	int temp=19;
-
+	int temp;
+	boolean isPrime=true;
+	Scanner scan= new Scanner(System.in);
+	System.out.println("Please enter any number:");
+	//capture the input in an integer
+	int num=scan.nextInt();
+        scan.close();
 	for(int i=2;i<=num/2;i++)
 	{
            temp=num%i;
@@ -21,4 +26,6 @@ class PrimeCheck
 	   System.out.println(num + " is not a Prime Number");
    }
 }
+
+
 
